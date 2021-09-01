@@ -22,6 +22,8 @@ const ProductUI = ({ match, history }) => {
   const productDetails = useSelector((state) => state.productDetails);
   const { product } = productDetails;
 
+  console.log('Product', product);
+
   useEffect(() => {
     dispatch(listProductsDetails(match.params.id));
   }, [dispatch, match]);

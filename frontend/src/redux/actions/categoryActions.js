@@ -23,3 +23,16 @@ export const listOfCategorys = () => async (dispatch) => {
     });
   }
 };
+
+
+
+  //for testing purposes only
+// export const listOfCategorys = () => async(dispatch) => {
+//   const { data } = await axios.get("/api/category"); 
+//   dispatch({
+//          type: CATEGORY_LIST_QUERY_SUCESS,
+//          payload: data
+//     });
+
+// } 
+
